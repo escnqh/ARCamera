@@ -8,8 +8,8 @@ import android.support.annotation.Nullable;
  * Created by 倪启航 on 2017/11/25.
  */
 
-public abstract class BaseFragment<V, T extends BasePresenter<V>> extends Fragment {
-    protected T mPresenter;
+public abstract class BaseFragment<V, P extends BasePresenter<V>> extends Fragment {
+    protected P mPresenter;
     private static final String TAG = "BaseFragment";
 
     @Override
@@ -25,5 +25,5 @@ public abstract class BaseFragment<V, T extends BasePresenter<V>> extends Fragme
         mPresenter.detachView();
     }
 
-    protected abstract T createPresenter();
+    protected abstract P createPresenter();
 }

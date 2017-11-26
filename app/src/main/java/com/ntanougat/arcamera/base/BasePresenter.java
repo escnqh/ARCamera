@@ -8,29 +8,29 @@ import java.lang.ref.WeakReference;
  * 所有Presenter的基类
  */
 
-public abstract class BasePresenter<T> {
-    protected Reference<T> mViewRef;
+public abstract class BasePresenter<V> {
+    protected Reference<V> mViewRef;
 
     //与View建立关系
-    public void attachView(T view){
-        mViewRef=new WeakReference<T>(view);
+    public void attachView(V view) {
+        mViewRef = new WeakReference<V>(view);
     }
 
     //获取View
-    protected T getView(){
+    protected V getView() {
         return mViewRef.get();
     }
 
     //判断是否与View建立了关系
-    public boolean isViewAttached(){
-        return mViewRef!=null&&mViewRef.get()!=null;
+    public boolean isViewAttached() {
+        return mViewRef != null && mViewRef.get() != null;
     }
 
     //与View解除关系
-    public void detachView(){
-        if(mViewRef!=null){
+    public void detachView() {
+        if (mViewRef != null) {
             mViewRef.clear();
-            mViewRef=null;
+            mViewRef = null;
         }
     }
 

@@ -24,4 +24,8 @@ public class PhotoInfoContract extends BaseContract {
         void requestRefresh();
 
     }
+
+    public interface RefreshPhotoInfoListener{
+        void onPhotoInfoRefresh();
+    }
 }
