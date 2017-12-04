@@ -7,11 +7,11 @@ import android.support.annotation.Nullable;
 import butterknife.ButterKnife;
 
 /**
- * Created by 倪启航 on 2017/11/21.
+ * Created by Peelson on 2017/11/21.
  */
 
-public abstract class BaseActivity<V, T extends BasePresenter<V>> extends Activity {
-    protected T mPresenter;
+public abstract class BaseActivity<V, P extends BasePresenter<V>> extends Activity {
+    protected P mPresenter;
     private static final String TAG = "BaseActivity";
     public Context mContext;
 
@@ -30,5 +30,5 @@ public abstract class BaseActivity<V, T extends BasePresenter<V>> extends Activi
         mPresenter.detachView();
     }
 
-    protected abstract T createPresenter();
+    protected abstract P createPresenter();
 }

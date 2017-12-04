@@ -18,9 +18,16 @@ public class MainActivity extends BaseActivity {
         setContentView(R.layout.activity_main);
         fragmentManager=getFragmentManager();
         initView();
+        initFragment();
+
+    }
+
+    private void initFragment() {
+
     }
 
     private void initView() {
+
     }
 
     @Override

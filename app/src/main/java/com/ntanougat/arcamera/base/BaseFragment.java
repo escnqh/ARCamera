@@ -5,7 +5,7 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 
 /**
- * Created by 倪启航 on 2017/11/25.
+ * Created by Peelson on 2017/11/25.
  */
 
 public abstract class BaseFragment<V, P extends BasePresenter<V>> extends Fragment {

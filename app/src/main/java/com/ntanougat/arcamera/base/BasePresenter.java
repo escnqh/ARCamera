@@ -4,7 +4,7 @@ import java.lang.ref.Reference;
 import java.lang.ref.WeakReference;
 
 /**
- * Created by 倪启航 on 2017/11/21.
+ * Created by Peelson on 2017/11/21.
  * 所有Presenter的基类
  */
 

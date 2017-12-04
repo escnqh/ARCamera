@@ -1,7 +1,7 @@
 package com.ntanougat.arcamera.base;
 
 /**
- * Created by 倪启航 on 2017/11/25.
+ * Created by Peelson on 2017/11/25.
  * View的基类
  */
 
