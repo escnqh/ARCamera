@@ -1,34 +1,28 @@
 package com.ntanougat.arcamera.base;
 
-import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import butterknife.ButterKnife;
+import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 
 /**
  * Created by Peelson on 2017/11/21.
  */
 
-public abstract class BaseActivity<V, P extends BasePresenter<V>> extends Activity {
-    protected P mPresenter;
+public class BaseActivity extends AppCompatActivity {
     private static final String TAG = "BaseActivity";
     public Context mContext;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Log.i(TAG,"BaseActivity start");
         mContext = this;
-        mPresenter = createPresenter();
-        mPresenter.attachView((V) this);
-        ButterKnife.bind(this);
     }
 
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        mPresenter.detachView();
     }
-
-    protected abstract P createPresenter();
 }
