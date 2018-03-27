@@ -43,7 +43,6 @@ public class WorkspageFragment extends BaseFragment {
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View v=inflater.inflate(R.layout.fragment_workspage,container,false);
-        ButterKnife.bind(this,v);
         return v;
     }
 }
