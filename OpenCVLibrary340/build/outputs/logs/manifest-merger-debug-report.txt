@@ -1,0 +1,69 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\AndroidProject\ARCamera\OpenCVLibrary340\src\main\AndroidManifest.xml:2:1-14:12
+INJECTED from D:\AndroidProject\ARCamera\OpenCVLibrary340\src\main\AndroidManifest.xml:2:1-14:12
+INJECTED from D:\AndroidProject\ARCamera\OpenCVLibrary340\src\main\AndroidManifest.xml:2:1-14:12
+INJECTED from D:\AndroidProject\ARCamera\OpenCVLibrary340\src\main\AndroidManifest.xml:2:1-14:12
+INJECTED from D:\AndroidProject\ARCamera\OpenCVLibrary340\src\main\AndroidManifest.xml:2:1-14:12
+INJECTED from D:\AndroidProject\ARCamera\OpenCVLibrary340\src\main\AndroidManifest.xml:2:1-14:12
+INJECTED from D:\AndroidProject\ARCamera\OpenCVLibrary340\src\main\AndroidManifest.xml:2:1-14:12
+	package
+		ADDED from D:\AndroidProject\ARCamera\OpenCVLibrary340\src\main\AndroidManifest.xml:3:7-27
+		INJECTED from D:\AndroidProject\ARCamera\OpenCVLibrary340\src\main\AndroidManifest.xml
+		INJECTED from D:\AndroidProject\ARCamera\OpenCVLibrary340\src\main\AndroidManifest.xml
+	android:versionName
+		ADDED from D:\AndroidProject\ARCamera\OpenCVLibrary340\src\main\AndroidManifest.xml:5:7-34
+		INJECTED from D:\AndroidProject\ARCamera\OpenCVLibrary340\src\main\AndroidManifest.xml
+		INJECTED from D:\AndroidProject\ARCamera\OpenCVLibrary340\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from D:\AndroidProject\ARCamera\OpenCVLibrary340\src\main\AndroidManifest.xml:2:11-69
+	android:versionCode
+		ADDED from D:\AndroidProject\ARCamera\OpenCVLibrary340\src\main\AndroidManifest.xml:4:7-33
+		INJECTED from D:\AndroidProject\ARCamera\OpenCVLibrary340\src\main\AndroidManifest.xml
+		INJECTED from D:\AndroidProject\ARCamera\OpenCVLibrary340\src\main\AndroidManifest.xml
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from D:\AndroidProject\ARCamera\OpenCVLibrary340\src\main\AndroidManifest.xml:6:2-76
+	android:name
+		ADDED from D:\AndroidProject\ARCamera\OpenCVLibrary340\src\main\AndroidManifest.xml:6:19-74
+uses-permission#android.permission.CAMERA
+ADDED from D:\AndroidProject\ARCamera\OpenCVLibrary340\src\main\AndroidManifest.xml:7:5-64
+	android:name
+		ADDED from D:\AndroidProject\ARCamera\OpenCVLibrary340\src\main\AndroidManifest.xml:7:22-62
+uses-feature#android.hardware.camera
+ADDED from D:\AndroidProject\ARCamera\OpenCVLibrary340\src\main\AndroidManifest.xml:9:5-84
+	android:required
+		ADDED from D:\AndroidProject\ARCamera\OpenCVLibrary340\src\main\AndroidManifest.xml:9:58-82
+	android:name
+		ADDED from D:\AndroidProject\ARCamera\OpenCVLibrary340\src\main\AndroidManifest.xml:9:19-57
+uses-feature#android.hardware.camera.autofocus
+ADDED from D:\AndroidProject\ARCamera\OpenCVLibrary340\src\main\AndroidManifest.xml:10:5-94
+	android:required
+		ADDED from D:\AndroidProject\ARCamera\OpenCVLibrary340\src\main\AndroidManifest.xml:10:68-92
+	android:name
+		ADDED from D:\AndroidProject\ARCamera\OpenCVLibrary340\src\main\AndroidManifest.xml:10:19-67
+uses-feature#android.hardware.camera.front
+ADDED from D:\AndroidProject\ARCamera\OpenCVLibrary340\src\main\AndroidManifest.xml:11:5-90
+	android:required
+		ADDED from D:\AndroidProject\ARCamera\OpenCVLibrary340\src\main\AndroidManifest.xml:11:64-88
+	android:name
+		ADDED from D:\AndroidProject\ARCamera\OpenCVLibrary340\src\main\AndroidManifest.xml:11:19-63
+uses-feature#android.hardware.camera.front.autofocus
+ADDED from D:\AndroidProject\ARCamera\OpenCVLibrary340\src\main\AndroidManifest.xml:12:5-100
+	android:required
+		ADDED from D:\AndroidProject\ARCamera\OpenCVLibrary340\src\main\AndroidManifest.xml:12:74-98
+	android:name
+		ADDED from D:\AndroidProject\ARCamera\OpenCVLibrary340\src\main\AndroidManifest.xml:12:19-73
+uses-sdk
+INJECTED from D:\AndroidProject\ARCamera\OpenCVLibrary340\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\AndroidProject\ARCamera\OpenCVLibrary340\src\main\AndroidManifest.xml
+INJECTED from D:\AndroidProject\ARCamera\OpenCVLibrary340\src\main\AndroidManifest.xml
+INJECTED from D:\AndroidProject\ARCamera\OpenCVLibrary340\src\main\AndroidManifest.xml
+INJECTED from D:\AndroidProject\ARCamera\OpenCVLibrary340\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from D:\AndroidProject\ARCamera\OpenCVLibrary340\src\main\AndroidManifest.xml
+		ADDED from D:\AndroidProject\ARCamera\OpenCVLibrary340\src\main\AndroidManifest.xml
+		INJECTED from D:\AndroidProject\ARCamera\OpenCVLibrary340\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from D:\AndroidProject\ARCamera\OpenCVLibrary340\src\main\AndroidManifest.xml
+		ADDED from D:\AndroidProject\ARCamera\OpenCVLibrary340\src\main\AndroidManifest.xml
+		INJECTED from D:\AndroidProject\ARCamera\OpenCVLibrary340\src\main\AndroidManifest.xml
