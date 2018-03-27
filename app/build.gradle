@@ -11,8 +11,13 @@ android {
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         externalNativeBuild {
             cmake {
-                cppFlags "-frtti -fexceptions"
+                arguments "-DANDROID_ARM_NEON=TRUE", "-DANDROID_TOOLCHAIN=clang","-DCMAKE_BUILD_TYPE=Release"
+                //'-DANDROID_STL=gnustl_static'
+                cppFlags "-std=c++11","-frtti", "-fexceptions"
             }
+        }
+        ndk{
+            abiFilters 'armeabi-v7a'
         }
     }
     buildTypes {
@@ -43,4 +48,6 @@ dependencies {
 
     //使用BottonNavigationBar
     compile 'com.ashokvarma.android:bottom-navigation-bar:2.0.2'
+
+    implementation project(':OpenCVLibrary340')
 }
