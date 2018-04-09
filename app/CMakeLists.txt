@@ -12,8 +12,8 @@ cmake_minimum_required(VERSION 3.4.1)
 
 set(CMAKE_VERBOSE_MAKEFILE on)
 set(libs "${CMAKE_SOURCE_DIR}/src/main/jniLibs")
-include_directories(${CMAKE_SOURCE_DIR}/src/main/cpp)
 include_directories(${CMAKE_SOURCE_DIR}/src/main/cpp/include)
+include_directories(${CMAKE_SOURCE_DIR}/src/main/cpp)
 
 #--------------------------------------------------- import ---------------------------------------------------#
 add_library(libopencv_java3 SHARED IMPORTED )

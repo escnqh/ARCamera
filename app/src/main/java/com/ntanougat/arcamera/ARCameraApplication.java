@@ -13,12 +13,14 @@ import com.ntanougat.arcamera.ui.activity.MainActivity;
 
 public class ARCameraApplication extends AppCompatActivity {
 
-    private String TAG="onStart com.ntanougat.arcamera.ARCameraApplication";
+
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         Intent intent=new Intent(ARCameraApplication.this, MainActivity.class);
+//        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(intent);
         finish();
     }
