@@ -1,15 +1,15 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 26
-    buildToolsVersion '26.0.2'
+    compileSdkVersion 29
+    buildToolsVersion '29.0.2'
     defaultConfig {
         applicationId "com.ntanougat.arcamera"
-        minSdkVersion 23
-        targetSdkVersion 26
+        minSdkVersion 21
+        targetSdkVersion 29
         versionCode 1
         versionName "1.0"
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+ 
         externalNativeBuild {
             cmake {
                 arguments "-DANDROID_ARM_NEON=TRUE", "-DANDROID_TOOLCHAIN=clang","-DCMAKE_BUILD_TYPE=Release"
@@ -18,8 +18,9 @@ android {
             }
         }
         ndk{
-            abiFilters 'armeabi-v7a'
+            abiFilters 'arm64-v8a'//'armeabi-v7a'
         }
+        multiDexEnabled = true
     }
     buildTypes {
         release {
@@ -32,23 +33,25 @@ android {
             path "CMakeLists.txt"
         }
     }
+    compileOptions {
+        sourceCompatibility = 1.8
+        targetCompatibility = 1.8
+    }
 }
 
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
-    implementation 'com.android.support:appcompat-v7:26.1.0'
-    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
-    testImplementation 'junit:junit:4.12'
-    androidTestImplementation 'com.android.support.test:runner:1.0.1'
-    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
-    //引入ButterKnife
-    compile 'com.jakewharton:butterknife:8.8.1'
-    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    //Introducing ButterKnife
+    implementation 'com.jakewharton:butterknife:10.2.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.2.0'
 
-    implementation 'com.android.support:design:26.1.0'
+    implementation 'com.google.android.material:material:1.0.0'
 
-    //使用BottonNavigationBar
-    compile 'com.ashokvarma.android:bottom-navigation-bar:2.0.2'
+    //Use BottomNavigationBar
+    implementation 'com.ashokvarma.android:bottom-navigation-bar:2.0.2'
+    implementation project(path: ':opencv-sdk')
 
-    implementation project(':OpenCVLibrary340')
+//    implementation project(':OpenCVLibrary340')
 }

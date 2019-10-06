@@ -2,6 +2,7 @@ package com.ntanougat.arcamera.ui.activity;
 
 import android.content.ContentValues;
 import android.hardware.Camera;
+//import android.media.ExifInterface;
 import android.media.ExifInterface;
 import android.net.Uri;
 import android.os.Bundle;
@@ -30,7 +31,7 @@ import java.io.IOException;
  * Created by ESCNQH on 2018/3/27.
  */
 
-public class ShotActivity extends BaseActivity implements CameraBridgeViewBase.CvCameraViewListener2{
+public class ShotActivity extends BaseActivity implements CameraBridgeViewBase.CvCameraViewListener2 {
 
     private int FLAG = 1;
     private long nowtime;
@@ -50,7 +51,7 @@ public class ShotActivity extends BaseActivity implements CameraBridgeViewBase.C
     static {
         System.loadLibrary("native-lib");
         System.loadLibrary("opencv_java3");
-        System.loadLibrary("opencv_java");
+//        System.loadLibrary("opencv_java");
     }
 
     @Override
@@ -71,7 +72,7 @@ public class ShotActivity extends BaseActivity implements CameraBridgeViewBase.C
         mOpenCvCameraView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Camera camera = ((JavaCameraView) mOpenCvCameraView).getCamera();
+                Camera camera = Camera.open (0); //(JavaCameraView) mOpenCvCameraView).getCamera();
                 if (camera != null) camera.autoFocus(null);
             }
         });
@@ -96,6 +97,7 @@ public class ShotActivity extends BaseActivity implements CameraBridgeViewBase.C
         }
     }
 
+    @Override
     public void onDestroy() {
         super.onDestroy();
         if (mOpenCvCameraView != null)
