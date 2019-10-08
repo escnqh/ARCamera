@@ -1,6 +1,5 @@
 package com.ntanougat.arcamera.util;
 
-import android.support.annotation.Nullable;
 import android.util.Log;
 
 import java.io.BufferedInputStream;

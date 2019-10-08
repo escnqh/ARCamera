@@ -1,13 +1,13 @@
 package com.ntanougat.arcamera.ui.activity;
 
 import android.os.Bundle;
-import android.support.design.widget.AppBarLayout;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentTransaction;
-import android.support.v4.view.MenuItemCompat;
-import android.support.v7.app.ActionBar;
-import android.support.v7.widget.SearchView;
-import android.support.v7.widget.Toolbar;
+import com.google.android.material.appbar.AppBarLayout;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
+import androidx.core.view.MenuItemCompat;
+import androidx.appcompat.app.ActionBar;
+import androidx.appcompat.widget.SearchView;
+import androidx.appcompat.widget.Toolbar;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -127,9 +127,9 @@ public class MainActivity extends BaseActivity implements SearchView.OnQueryText
     private void initNavigationBar() {
         navigationBarMain.setActiveColor(R.color.united_color);
         navigationBarMain
-                .addItem(new BottomNavigationItem(R.drawable.ic_mainpage, "首页"))
-                .addItem(new BottomNavigationItem(R.drawable.ic_listpage, "全部"))
-                .addItem(new BottomNavigationItem(R.drawable.ic_userpage, "我的"))
+                .addItem(new BottomNavigationItem(R.drawable.ic_mainpage, "Home"))
+                .addItem(new BottomNavigationItem(R.drawable.ic_listpage, "All"))
+                .addItem(new BottomNavigationItem(R.drawable.ic_userpage, "Mine"))
                 .initialise();
         Log.i(TAG,"navigationBar init seccess!");
         navigationBarMain.setTabSelectedListener(new BottomNavigationBar.OnTabSelectedListener() {

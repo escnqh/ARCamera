@@ -1,6 +1,6 @@
 #include <jni.h>
 #include <opencv2/opencv.hpp>
-#include <bits/stdc++.h>
+//#include <bits/stdc++.h>
 #include <android/log.h>
 #define  LOG_TAG    "JNI_PART"
 #define LOGI(...)  __android_log_print(ANDROID_LOG_INFO,LOG_TAG, __VA_ARGS__)

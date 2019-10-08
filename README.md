@@ -1,9 +1,9 @@
 # ARCamera
-- 简介
-    - 项目支持
+- Summary
+    - project support
 
-      支持来自于Google协同育人项目（2017-2018）& 中南民族大学校级大创
-    - 团队
+      Support from the Google Collaborative Education Project (2017-2018) & Central South University
+- Team
 
       SCUEC.Newthread.AndroidTeam
 
